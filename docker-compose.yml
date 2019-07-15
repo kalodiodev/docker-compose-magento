@@ -12,7 +12,7 @@ services:
     volumes: &appvolumes
       - ~/.composer:/var/www/.composer:delegated
       - ./src:/var/www/html/
-      - ./sockdata:/sock
+      - sockdata:/sock
       - ./default.conf:/etc/nginx/conf.d/default.conf:delegated
       - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf:delegated
 
@@ -40,5 +40,6 @@ services:
       - "9200:9200"
       - "9300:9300"
 
-# volumes:
-  #appdata:
+volumes:
+  appdata:
+  sockdata:
