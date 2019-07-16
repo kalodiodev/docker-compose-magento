@@ -1,4 +1,4 @@
-Docker Configuration for Magento 2
+Docker Configuration for Magento 2 Development
 
 ## Usage
 
